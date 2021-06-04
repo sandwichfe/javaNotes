@@ -205,3 +205,27 @@ git stash pop
 
 ![image-20210421155613573](git的使用.assets/image-20210421155613573.png)
 
+
+
+**注意是 还不想提交**    
+
+出现的是这个错，  就可以用  stash  解决        
+
+`````
+error: Your local changes to the following files would be overwritten by merge:
+`````
+
+如果 冲突的文件 ：  已经提交了  。 
+
+那么出现的就是：
+
+````
+Auto-merging aaa
+CONFLICT (content): Merge conflict in aaa
+Automatic merge failed; fix conflicts and then commit the result.
+
+````
+
+就直接解决冲突就可以了。  就去 解决文件就ok了。
+
+![image-20210421173537147](git的使用.assets/image-20210421173537147.png)
